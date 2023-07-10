@@ -1,6 +1,14 @@
+import MenuLink from "../MenuLink"
+import styles from "./Menu.module.css"
 
 export default function Menu(){
+
     return(
-        <h1>Menu</h1>
+        <header>
+            <nav className={styles.navegacao}>
+                <MenuLink to="/">Inicio</MenuLink>
+                <MenuLink to="/sobremim">sobremim</MenuLink>
+            </nav>
+        </header>
     )
 }
