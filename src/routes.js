@@ -11,17 +11,17 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
-      
+
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post/>}/>
         </Route>
-
-        <Route path="*" element={<NaoEncontrada/>} />
+        
+        <Route path="posts/:id" element={<Post />} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
-      
+
       <Rodape />
     </BrowserRouter>
   );
